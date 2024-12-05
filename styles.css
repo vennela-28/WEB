@@ -1,0 +1,249 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    background: url('web.webp') no-repeat center;
+    background-size: cover;
+    position: relative;
+}
+
+.navbar {
+    margin-bottom: 10px;
+    background-color: rgba(30, 32, 33, 0.8); /* Semi-transparent background */
+    padding: 10px 20px;
+    position: absoult; /* Positioning the navbar at the top */
+    width: 100%; /* Full width */
+    z-index: 10; /* Ensure it stays on top */
+}
+
+.navbar ul {
+    list-style-type: none; /* Remove bullet points */
+    margin: 0;
+    padding: 0;
+    display: flex; /* Horizontal layout */
+    justify-content: center; /* Center the items */
+}
+
+.navbar li {
+    margin: 0 15px; /* Space between items */
+}
+
+.navbar a {
+    color: #fff; /* White text */
+    text-decoration: none; /* Remove underline */
+    font-size: 18px; /* Font size */
+}
+
+.navbar a:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.login-box {
+    background-color: rgba(255, 251, 251, 0.795);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(113, 113, 113, 0.1);
+    text-align: center;
+}
+
+.login-box h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.textbox {
+    margin-bottom: 15px;
+}
+
+.textbox input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #eeeaea0d;
+    border-radius: 5px;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #1e2021;
+    border: none;
+    border-radius: 5px;
+    color: rgb(237, 226, 226);
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: #2b1e1e;
+}
+
+.background-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(180deg); /* Rotate the text upside down */
+    font-size: 5rem; /* Adjust the font size as needed */
+    color: rgba(255, 255, 255, 0.1); /* Light color with transparency */
+    white-space: nowrap; /* Prevent text wrapping */
+    pointer-events: none; /* Allow clicks to go through to the login box */
+    z-index: 0; /* Ensure this is behind the login box */
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+h1 {
+    color: #333;
+}
+
+h2 {
+    color: #555;
+}
+
+.shop-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px;
+   
+}
+
+.shop {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 15px;
+    width: 200px;
+    text-align: center;
+}
+
+.shop h3 {
+    margin: 0;
+    color: #333;
+}
+
+.shop p {
+    margin: 5px 0;
+}
+
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1, h2 {
+    color: #333;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+.shop-image {
+    width: 50px; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+}
+shop-image {
+    width: 120px; /* Adjust the width to fit the box */
+    height: 120px; /* Set a fixed height */
+    object-fit: cover; /* Ensure the image covers the area without distortion */
+    margin-right: 15px; /* Space between image and text */
+}
+container {
+    margin-bottom: 2cm; /* Add a bottom margin to create space */
+}
+.shop-image {
+    width: 100%;
+    height: auto;
+    cursor: pointer;
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%; /* Could be more or less, depending on screen size */
+    max-width: 700px;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+.shop-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.shop-item {
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 5px;
+    width: calc(33.33% - 20px); /* Adjust for responsiveness */
+}
